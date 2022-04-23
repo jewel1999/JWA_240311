@@ -8,7 +8,7 @@ export default function Home({ token }) {
   return (
     <Layout>
     <Head>
-        <title>First Page</title>
+        <title>เที่ยวด้วยกันนะ.com</title>
     </Head>
     
     <div className={styles.container}>
