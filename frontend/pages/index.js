@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Layout from '../components/layout' 
 import Navbar from '../components/navbar'
 import styles from '../styles/Home.module.css'
+import Test from '../components/Test'
 
 export default function Home({ token }) {
  
@@ -10,13 +11,15 @@ export default function Home({ token }) {
     <Head>
         <title>เที่ยวด้วยกันนะ.com</title>
     </Head>
-    
-    <div className={styles.container}>
-        
-        <Navbar />
-        <h1>Home page</h1>
-        No login required!
-    </div>
+          <div >        
+                <Navbar />        
+          </div>
+
+          
+
+          <div >        
+                < Test />        
+          </div>
 </Layout>
   )
 }
