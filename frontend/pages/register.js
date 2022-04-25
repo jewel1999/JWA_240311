@@ -93,11 +93,10 @@ export default function Register({ token }) {
                     {registerForm()}
                 </div>
 
-                <div classname={styles.buttonRegister}>
+                <div>
                     <button onClick={register}>Register</button>
                 </div>
             </div>
-        
         </Layout>
     )
 }

@@ -2,25 +2,38 @@ import Head from 'next/head'
 import Layout from '../components/layout' 
 import Navbar from '../components/navbar'
 import styles from '../styles/Home.module.css'
-import Test from '../components/Test'
 
 export default function Home({ token }) {
  
   return (
+  
     <Layout>
+       
     <Head>
-        <title>เที่ยวด้วยกันนะ.com</title>
+        <title> First Page</title>
     </Head>
-          <div >        
-                <Navbar />        
-          </div>
+    
+    <div >
+        <Navbar />
+    </div>
 
-          
+    <div>
+    <div class="flex justify-center text-md" > 
+  <p>
+   
+    I’m Derek, an astro-engineer based in Tattooine. I like to build X-Wings at
+    <p class="flex justify-center  ">My Company, Inc </p> 
+    <p class="flex justify-center text-md">watchpod-racing</p> 
+    <p class="flex justify-center text-md">light-saber</p> 
+  </p>
 
-          <div >        
-                < Test />        
-          </div>
+</div>
+  
+    <p className="flex justify-center text-md" >Welcome Home</p>
+    <p className="flex justify-center text-md" >Home</p>
+    </div>
 </Layout>
+
   )
 }
 
