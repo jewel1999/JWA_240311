@@ -30,7 +30,7 @@ export default function Login({ token }) {
     }
 
     const loginForm = () => (
-        <div className={styles.gridContainer}>
+        <div classname={styles.gridContainer}>
             <div>
                 Username:
             </div>
@@ -62,7 +62,7 @@ export default function Login({ token }) {
             <Head>
                 <title>Login</title>
             </Head>
-            <div className={styles.container}>
+            <div >
                 <Navbar />
                 <h1>Login</h1>
                 <div><b>Token:</b> {token.substring(0, 15)}...

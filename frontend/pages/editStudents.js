@@ -74,7 +74,7 @@ const editStudents = ({ token }) => {
             <Head>
                 <title>Students</title>
             </Head>
-            <div className={styles.container}>
+            <div >
                 <Navbar />
                 {JSON.stringify(students.students)}
                 <ul className={styles.list}>

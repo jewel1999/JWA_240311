@@ -38,8 +38,8 @@ export default function Register({ token }) {
     }
 
     const registerForm = () => (
-        <div className={styles.gridContainer}>
-            <div>
+        <div className="flex flex-col item-center ">
+            <div className="justify-center my-8">
                 Username:
             </div>
             <div>
@@ -75,28 +75,41 @@ export default function Register({ token }) {
     return (
         <Layout>
             <Head>
+            
                 <title>Register</title>
             </Head>
-            <div className={styles.container}>
+            <div >
                 <Navbar />
-                <h1>Register</h1>
-                <div><b>Token:</b> {token.substring(0, 15)}...
-                <button
-                        onClick={() => { navigator.clipboard.writeText(token) }}>
-                        Copy token
-                </button>
+
+
+                <div className ="flex flex-col fixed bg-amber-300 justify-center items-center border-4 h-screen w-screen">
+                <div className="text-center divide-y-2 devide-black  text-2xl">
+                
+
+                <div className ="border-4 border-pink-500 ">
+                        <h1>Register</h1>
+
+                <div className="text-center divide-y-2 devide-black mt-10 text-2xl" >
+<div >
+                    <button className= "rounded-lg  text-orange-700" onClick={register}>Register</button>
                 </div>
-                <br />
-            Status:  {status}
-                <br /><br />
-                <div className={styles.content}>
+                <div className="flex flex-col fixed justify-start item-center ">
                     {registerForm()}
                 </div>
-
-                <div>
-                    <button onClick={register}>Register</button>
+               
                 </div>
+                </div>
+            
+                
             </div>
+
+</div> 
+
+</div>
+
+
+
+
         </Layout>
     )
 }

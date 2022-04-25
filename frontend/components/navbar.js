@@ -4,7 +4,7 @@ import Link from 'next/link'
 const Navbar = () => (
     <div class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
-    <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span>
+    <span class="font-semibold text-xl tracking-tight">Let's Travel</span>
   </div>
    
     <Link href="/" class= "block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page" ><a> Home </a></Link> 

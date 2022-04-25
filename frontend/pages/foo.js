@@ -35,7 +35,7 @@ const Profile1 = ({ token }) => {
             <Head>
                 <title>Foo</title>
             </Head>
-            <div className={styles.container}>
+            <div >
                 <Navbar />
                 <h1>Foo</h1>
                 

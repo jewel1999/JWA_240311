@@ -31,7 +31,7 @@ const showStudents = ({ token }) => {
         console.log('Students:', students)
         if (students.list && students.list.length)
             return (students.list.map((student, index) =>
-            (<li key={index} className={styles.listItem}>
+            (<li key={index} classname="flex flex-col">
                Name : {(student) ? student.name : '-'} <br></br>
                Surname : {(student) ? student.surname : '-'}  <br></br>
                Major : {(student) ? student.major : '-'}  <br></br>
@@ -47,7 +47,7 @@ const showStudents = ({ token }) => {
             <Head>
                 <title>Students</title>
             </Head>
-            <div className={styles.container}>
+            <div>
                 <Navbar />
                 {JSON.stringify(students.students)}
                 <ul className={styles.list}>
